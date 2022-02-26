@@ -1,4 +1,4 @@
-FROM python:3.11.0a5-bullseye
+FROM python:3.10.2
 #Copiando os arquivos do projeto para o diretorio usr/src/app 
 COPY . /usr/src/app
 #Definindo o diretorio onde o CMD será executado e copiando o arquivo de requerimentos
