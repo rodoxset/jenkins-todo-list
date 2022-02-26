@@ -5,8 +5,7 @@ COPY . /usr/src/app
 WORKDIR /usr/src/app
 COPY requirements.txt ./
 # Instalando os requerimentos com o PIP
-RUN pip install --no-cache-dir -r requirements.txt 
-RUN pip install --upgrade pip
+RUN pip install 21.3.1 --no-cache-dir -r requirements.txt 
 # Expondo a porta da APP
 EXPOSE 8000
 # Executando o comando para subir a aplicacao
